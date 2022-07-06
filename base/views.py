@@ -1,12 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-def view_home(request):
-    return HttpResponse("Pagina Home")
+class HomeView(TemplateView):
+    template_name = 'home.html'
 
-def view_about(response):
-    return HttpResponse("Pagina About")
+class LoginView(TemplateView):
+    template_name = 'login.html'
 
-def view_contacts(response):
-    return HttpResponse("Pagina Contacts")
+class ContactView(TemplateView):
+    template_name = 'contact.html'
+
+
