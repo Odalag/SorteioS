@@ -9,7 +9,7 @@ class HomeView(TemplateView):
 class LoginView(TemplateView):
     template_name = 'login.html'
 
-class ContactView(TemplateView):
-    template_name = 'contact.html'
+class SobreView(TemplateView):
+    template_name = 'sobre.html'
 
 
