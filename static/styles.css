@@ -1,0 +1,78 @@
+:root {
+    --color-primary: #2567E5;
+    --color-secundary: #FFFFFF;
+    --color-emphasis: #000000;
+  
+    --color-white: #fff;
+    --color-black: #000;
+  
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+  
+    --font-primary: sans-serif;
+    --font-headings: "Roboto Slab", serif;
+  
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+  }
+  
+  /* Configurações de reset da página */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem; /*16 px*/
+    font-family: var(--font-primary);
+  }
+  
+  /*      */
+  
+  .navbar {
+    background: var(--color-secundary);
+  }
+  
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  
+  i {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+  
+  i:hover {
+    color: var(--color-emphasis);
+  }
+  
+  .div-main {
+    position: relative;
+    background-color: var(--color-primary);
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: var(--color-secundary);
+    font-family: var(--font-headings);
+  }
+  
+  .button-heroe {
+    font: var(--font-primary);
+    background-color: var(--color-secundary);
+    color: var(--color-emphasis);
+  }
+  
+  .button-heroe:hover {
+    color: var(--color-primary);
+    background-color: var(--color-emphasis);
+  }
