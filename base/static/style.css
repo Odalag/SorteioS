@@ -1,11 +1,58 @@
-li a {
-    color: rgb(211, 0, 0);
-}
+/* Configurações de cores e fontes gerais do app Web */
+:root {
+    --color-primary: #FFFFFF;
+    --color-secundary: #2567E5;
+    --color-emphasis: #940303;
+  
+    --color-white: #fff;
+    --color-black: #000;
+  
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+  
+    --font-primary: sans-serif;
+    --font-headings: "Roboto Slab", serif;
+  
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+  }
+  
+  /* Configurações de reset da página */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem; /*16 px*/
+    font-family: var(--font-primary);
+    background-color: var(--color-black);
+  }
+  
+  /*      */
+  
+  .navbar {
+    background: var(--color-primary);
+  }
+  
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  
+  h1 {
+    color: var(--color-secundary);
+    font-family: var(--font-headings);
+  }
 
-body {
-    background: rgb(0, 0, 0) url("images/background1.png") no-repeat;
-}
-
-h1 {
-    color: rgb(0, 0, 0);
+li a{
+    color: var(--color-emphasis);
 }
