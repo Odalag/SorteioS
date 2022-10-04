@@ -37,6 +37,10 @@
     font-family: var(--font-primary);
     background-color: var(--color-black);
   }
+
+  main {
+    background-color: var(--color-primary);
+  }
   
   /*      */
   

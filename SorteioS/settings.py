@@ -37,6 +37,7 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms'
 ]
 
 OTHER_APPS = [
@@ -48,6 +49,8 @@ MY_APPS = [
 ]
 
 INSTALLED_APPS = DJANGO_APPS + OTHER_APPS + MY_APPS
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 MIDDLEWARE = [
@@ -139,3 +142,7 @@ MEDIA_ROOT = BASE_DIR/'static/images/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = 'home' #vai redirecionar caso tente acessar sem ter feito o login
+LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'
