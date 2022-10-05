@@ -41,7 +41,6 @@ DJANGO_APPS = [
 ]
 
 OTHER_APPS = [
-    'bootstrap5',
 ]
 
 MY_APPS = [

@@ -1,8 +1,7 @@
 /* Configurações de cores e fontes gerais do app Web */
 :root {
-    --color-primary: #FFFFFF;
+    --color-primary: #940303;
     --color-secundary: #2567E5;
-    --color-emphasis: #940303;
   
     --color-white: #fff;
     --color-black: #000;
@@ -39,17 +38,34 @@
   }
 
   main {
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
+    max-width: 400px;
+    margin-inline: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .btn {
+    color: var(--color-white);
+    background: var(--color-secundary);
+    font-weight: bold;
+    font-size: medium;
   }
   
   /*      */
   
   .navbar {
-    background: var(--color-primary);
+    background: var(--color-white);
   }
   
   .navbar-brand {
     font-size: 3rem;
+  }
+
+  .nav-link {
+    font-weight: bold;
   }
   
   h1 {
@@ -58,5 +74,5 @@
   }
 
 li a{
-    color: var(--color-emphasis);
+    color: var(--color-primary);
 }
