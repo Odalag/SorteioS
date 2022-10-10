@@ -35,14 +35,15 @@
     font-size: 1.6rem; /*16 px*/
     font-family: var(--font-primary);
     background-color: var(--color-black);
+    margin: auto;
   }
 
   main {
     background-color: var(--color-white);
     max-width: 400px;
-    margin-inline: auto;
-    margin-top: 10%;
-    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
     font-weight: bold;
     font-size: large;
   }
