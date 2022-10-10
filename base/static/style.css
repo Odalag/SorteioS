@@ -54,6 +54,12 @@
     font-weight: bold;
     font-size: medium;
   }
+
+  #perfil {
+    background: var(--color-white);
+    margin-right: 50px;
+
+  }
   
   /*      */
   
