@@ -55,6 +55,12 @@
     font-size: medium;
     margin-right: 5px;
   }
+
+  #perfil {
+    background: var(--color-white);
+    margin-right: 50px;
+
+  }
   
   #login {
     background: var(--color-white);
