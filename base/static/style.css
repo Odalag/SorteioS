@@ -53,8 +53,15 @@
     background: var(--color-secundary);
     font-weight: bold;
     font-size: medium;
+    margin-right: 5px;
   }
   
+  #login {
+    background: var(--color-white);
+    color: var(--color-secundary);
+    border-color: var(--color-secundary);
+  }
+
   /*      */
   
   .navbar {
@@ -67,6 +74,7 @@
 
   .nav-link {
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   h1 {

@@ -29,13 +29,8 @@
             <a class="nav-link" href="{% url 'sobre' %}">SOBRE</a>
           </li>
         </ul>
-        {% if request.user.is_authenticated %}
-        <a class="nav-link" href="{% url 'login' %}">
-          <img src="{% static 'images/perfil.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
-        </a>
-        {% else %}
-        <a class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRE OU CADASTRE-SE</a>
-        {% endif %}
+        <a id="login" class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRAR</a>
+        <a class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
       </div>
     </nav>
 

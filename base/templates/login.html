@@ -1,5 +1,4 @@
 {% load static %}
-{% load crispy_forms_tags %}
 
 <!doctype html>
 <html lang="pt-br">
@@ -30,38 +29,12 @@
               <a class="nav-link" href="{% url 'sobre' %}">SOBRE</a>
             </li>
           </ul>
-          {% if request.user.is_authenticated %}
-          <a class="nav-link" href="{% url 'login' %}">
-            <img src="{% static 'images/perfil.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
-          </a>
-          {% else %}
-          <a class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRE OU CADASTRE-SE</a>
-          {% endif %}
+          <a id="login" class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRAR</a>
+          <a class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
         </div>
       </nav>
 
-        <main>
-            {% if request.user.is_authenticated %}
-            <h3>Ação não permitida</h3>
-            <hr>
-            <p class="lead">
-                Você não tem permissão para processar a ação desejada.
-            </p>
-        
-            {% else %}
-            <hr>
-            <form action="" method="POST">
-                {% csrf_token %}
-        
-                {{ form|crispy }}
-        
-                <hr class="mt-3">
-                <button type="submit" class="btn btn-lg">Entrar</button>
-        
-            </form>
-        
-            {% endif %}
-        </main>
+      <h1>Login</h1>
 
     </div>
     <!-- Optional JavaScript -->
