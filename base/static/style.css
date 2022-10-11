@@ -38,14 +38,24 @@
     margin: auto;
   }
 
-  main {
+  .form_cadastro {
     background-color: var(--color-white);
     max-width: 400px;
     margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     border-radius: 20px;
     font-weight: bold;
     font-size: large;
+  }
+
+  input {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    padding: 5px 50px 3px 10px;
+    border-radius: 5px;
+    border-style: solid
   }
 
   .btn {
@@ -80,14 +90,14 @@
 
   .nav-link {
     font-weight: bold;
+    font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-secundary);
   }
   
   h1 {
+    font-weight: bold;
+    font-size: 30px;
     color: var(--color-secundary);
-    font-family: var(--font-headings);
-  }
-
-li a{
-    color: var(--color-primary);
-}
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;  }

@@ -34,21 +34,23 @@
         </div>
       </nav>
 
-      <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
-      <form action="" method="POST">
-        {% csrf_token %}
-        <form action="{% url 'cadastro' %}" method="POST">
-            <input type="text" placeholder="usuário" name="username">
-            <br>
-            <br>
-            <input type="email" placeholder="e-mail" name="email">
-            <br>
-            <br>
-            <input type="password" placeholder="senha" name="password">
-            <br>
-            <br>
-        <button type="submit" class="btn btn-primary">Cadastrar-se</button>
-      </form>
+        <div class="form_cadastro">
+        <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <form action="{% url 'cadastro' %}" method="POST">
+                <input type="text" placeholder="usuário" name="username">
+                <br>
+                <br>
+                <input type="email" placeholder="e-mail" name="email">
+                <br>
+                <br>
+                <input type="password" placeholder="senha" name="password">
+                <br>
+                <br>
+            <button id="button_form" type="submit" class="btn btn-primary">Cadastrar-se</button>
+        </form>
+        </div>
 
     </div>
     <!-- Optional JavaScript -->

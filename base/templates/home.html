@@ -29,29 +29,10 @@
             <a class="nav-link" href="{% url 'sobre' %}">SOBRE</a>
           </li>
         </ul>
-<<<<<<< HEAD
         <a id="login" class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRAR</a>
         <a class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
-=======
-        {% if request.user.is_authenticated %}
-        <div class="btn-group" >
-          <button id="perfil" class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-            <img src="{% static 'images/perfil.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Perfil</a>
-            <a class="dropdown-item" href="#">Criar Sorteios</a>
-            <a class="dropdown-item" href="#">Meus Sorteios</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{% url 'logout' %}">SAIR</a>
-          </div>
-        </div>
-        {% else %}
-        <a class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRE OU CADASTRE-SE</a>
-        {% endif %}
->>>>>>> a04778466e85cae4c91e604d2cd5d437a10d8575
       </div>
-
+      
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
