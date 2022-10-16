@@ -1,6 +1,6 @@
 /* Configurações de cores e fontes gerais do app Web */
 :root {
-    --color-primary: #940303;
+    --color-primary: #c70000;
     --color-secundary: #2567E5;
   
     --color-white: #fff;
@@ -34,28 +34,29 @@
   body {
     font-size: 1.6rem; /*16 px*/
     font-family: var(--font-primary);
-    background-color: var(--color-black);
+    background-color: var(--color-secundary);
     margin: auto;
   }
 
   .form_cadastro {
     background-color: var(--color-white);
     max-width: 400px;
-    margin: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 250px;
+    padding: 20px 50px 20px 50px;
     border-radius: 20px;
     font-weight: bold;
     font-size: large;
   }
 
   input {
+    background-color: rgb(219, 219, 219);
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
     padding: 5px 50px 3px 10px;
-    border-radius: 5px;
-    border-style: solid
+    border-radius: 10px;
+    border-style: solid;
+    border-color: transparent;
   }
 
   .btn {
@@ -66,6 +67,12 @@
     margin-right: 5px;
   }
 
+  #icon {
+    max-width: 400px;
+    margin-right: 250px;
+    float: right;
+  }
+
   #perfil {
     background: var(--color-white);
     margin-right: 50px;
@@ -73,11 +80,14 @@
   }
   
   #login {
-    background: var(--color-white);
+    background: transparent;
     color: var(--color-secundary);
     border-color: var(--color-secundary);
   }
 
+  .botoes {
+    margin-left: auto;
+  }
   /*      */
   
   .navbar {
@@ -90,14 +100,34 @@
 
   .nav-link {
     font-weight: bold;
-    font-size: medium;
+    font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-secundary);
+    color: var(--color-primary);
   }
   
-  h1 {
+  .form_cadastro h1{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--color-secundary);
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;  }
+
+  .form_cadastro p {
+    font-size: 15px;
+  }
+
+  .carousel {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .carousel .btn {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+    font-weight: normal;
+  }
+
+  
