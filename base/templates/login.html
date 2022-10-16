@@ -6,7 +6,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -23,15 +22,15 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">HOME</a>
+            <a class="btn btn-lg" href="{% url 'home' %}" role="link" >HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'sobre' %}">SOBRE</a>
+            <a class="btn btn-lg" href="{% url 'sobre' %}" role="link" >SOBRE</a>
           </li>
         </ul>
         <div class="botoes">
-          <a id="login" class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRAR</a>
-          <a id="cad" class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
+          <a id="login" class="btn btn-lg active" href="{% url 'login' %}" role="link" >ENTRAR</a>
+          <a id="cadastre-se" class="btn btn-lg" href="{% url 'cadastro' %}" role="link" >CADASTRE-SE</a>
         </div>
       </div>
     </nav>

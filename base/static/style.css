@@ -61,10 +61,14 @@
 
   .btn {
     color: var(--color-white);
-    background: var(--color-secundary);
+    background: var(--color-primary);
     font-weight: bold;
     font-size: medium;
     margin-right: 5px;
+  }
+
+  .bnt:active {
+    background-color: var(--color-secundary);
   }
 
   #icon {
@@ -79,10 +83,14 @@
 
   }
   
-  #login {
+  /* #login {
     background: transparent;
     color: var(--color-secundary);
     border-color: var(--color-secundary);
+  } */
+
+  #cadastre-se, #login{
+    background: var(--color-secundary);
   }
 
   .botoes {
@@ -117,17 +125,16 @@
   }
 
   .carousel {
+    display: inline-block;
     max-width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
     margin-top: 20px;
   }
 
-  .carousel .btn {
-    background: transparent;
+  /* .carousel .btn {
     color: var(--color-white);
-    border-color: var(--color-white);
-    font-weight: normal;
-  }
-
-  
+    background: var(--color-primary);
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 5px;
+  } */

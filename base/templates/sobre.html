@@ -23,15 +23,15 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">HOME</a>
+            <a class="btn btn-lg" href="{% url 'home' %}" role="link" >HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'sobre' %}">SOBRE</a>
+            <a class="btn btn-lg active" href="{% url 'sobre' %}" role="link" >SOBRE</a>
           </li>
         </ul>
         <div class="botoes">
           <a id="login" class="btn btn-lg" href="{% url 'login' %}" role="button" >ENTRAR</a>
-          <a id="cad" class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
+          <a id="cadastre-se" class="btn btn-lg" href="{% url 'cadastro' %}" role="button" >CADASTRE-SE</a>
         </div>
       </div>
     </nav>
