@@ -21,12 +21,15 @@ def register(request):
         username = request.POST.get('username')
         email = request.POST.get('email')
         password = request.POST.get('password')
+        telefone = request.POST.get('telefone')
+        aluno = request.POST.get('aluno')
+        checkbox = request.POST.get('checkbox')
 
         #user = User.objects.filter('username').first()
 
         #if user:
         #    return render(request, "core/pages/permisson.html")
         #else:
-        user = User.objects.create_user(username=username, email=email, password=password)
+        user = User.objects.create_user(username=username, email=email, password=password, telefone=telefone, aluno=aluno, checkbox=checkbox)
 
         return render(request, "home.html")

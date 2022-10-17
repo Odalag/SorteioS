@@ -41,16 +41,27 @@
       <form action="" method="POST">
           {% csrf_token %}
         <form action="{% url 'cadastro' %}" method="POST">
-              <p>Usuário:</p>
-              <input type="text" placeholder="" name="username">
+              <p>Nome:</p>
+              <input type="text" placeholder="Nome Completo" name="username">
+              <br>
+              <br>
+              <p>Telefone:</p>
+              <input type="tel" placeholder="(99)99999-9999" name="telefone">
               <br>
               <br>
               <p>Email:</p>
-              <input type="email" name="email">
+              <input type="email" placeholder="email@gmail.com" name="email">
               <br>
               <br>
               <p>Senha:</p>
-              <input type="password" name="password">
+              <input type="password" placeholder="Senha" name="password">
+              <br>
+              <br>
+              <p>Você é aluno?</p>
+              <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
+              <label for="sim">Sim</label>
+              <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
+              <label for="sim">Não</label>
               <br>
               <br>
           <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button>
