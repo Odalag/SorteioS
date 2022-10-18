@@ -7,6 +7,6 @@ from .views import HomeView, login, SobreView, register
 urlpatterns = [
     path("", HomeView.as_view(), name='home'),
     path("sobre/", SobreView.as_view(), name='sobre'),
-    path('login/', login, name="login"),
-    path('cadastro/', register, name = 'cadastro'),
+    path('login/', login, name='login'),
+    path('cadastro/', register, name='cadastro'),
 ]

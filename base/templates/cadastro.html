@@ -42,46 +42,34 @@
       <form action="" method="POST">
           {% csrf_token %} 
         <form action="{% url 'cadastro' %}" method="POST">
-          <ul>
-            <li>
-              <label for="nomec">Nome:</label>
-              <br>
-              <input type="text" id=nomec placeholder="Nome Completo" name="username">
-              <br>
-            </li>
-            <li>
-              <br>
-              <label for="tel">Telefone:</label>
-              <br>
-              <input type="tel" id=tel placeholder="(99)99999-9999" name="telefone">
-              <br>
-            </li>
-            <li>
-              <br>
-              <label for="email">Email:</label>
-              <br>
-              <input type="email" id=email placeholder="email@gmail.com" name="email">
-              <br>
-            </li>
-            <li>
-              <br>
-              <label for="passwd">Senha:</label>
-              <br>
-              <input type="password" id=passwd placeholder="Senha" name="password">
-              <br>
-            </li>
-            <li>
-              <br>
-              <label for="sim">Você é aluno?</label>
-              <br>
-              <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
-              <label for="sim">Sim</label>
-              <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
-              <label for="sim">Não</label>
-              <br>
-            </li>
-              <br>
-          </ul>
+          <label for="nomec">Nome:</label>
+          <br>
+          <input type="text" id=nomec placeholder="Nome Completo" name="username">
+          <br>
+          <br>
+          <label for="tel">Telefone:</label>
+          <br>
+          <input type="tel" id=tel placeholder="(99)99999-9999" name="telefone">
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" id=email placeholder="email@gmail.com" name="email">
+          <br>
+          <br>
+          <label for="passwd">Senha:</label>
+          <br>
+          <input type="password" id=passwd placeholder="Senha" name="password">
+          <br>
+          <br>
+          <label for="sim">Você é aluno?</label>
+          <br>
+          <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
+          <label for="sim">Sim</label>
+          <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
+          <label for="sim">Não</label>
+          <br>
+          <br>
           <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button>
       </form>
       </div>
