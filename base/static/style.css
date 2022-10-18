@@ -121,3 +121,7 @@
     margin-left: 40px;
     margin-top: 5%;
   }
+
+  li {
+    list-style-type: none;
+  }
