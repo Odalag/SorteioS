@@ -41,11 +41,12 @@
   .form_cadastro {
     background-color: var(--color-white);
     max-width: 400px;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 250px;
     padding: 20px 50px 20px 50px;
-    border-radius: 40px;
+    border-radius: 20px;
+    font-weight: bold;
     font-size: large;
   }
 
@@ -56,6 +57,7 @@
     border-radius: 10px;
     border-style: solid;
     border-color: transparent;
+    position: relative;
   }
 
   .btn {
@@ -66,13 +68,10 @@
     margin-right: 5px;
   }
 
-  .bnt:active {
-    background-color: var(--color-secundary);
-  }
-
   #icon {
-    max-width: 400px;
-    margin-right: 250px;
+    max-width: 25%;
+    margin-top: 5%;
+    margin-right: 20%;
     float: right;
   }
 
@@ -81,12 +80,6 @@
     margin-right: 50px;
 
   }
-  
-  /* #login {
-    background: transparent;
-    color: var(--color-secundary);
-    border-color: var(--color-secundary);
-  } */
 
   #cadastre-se, #login{
     background: var(--color-secundary);
@@ -95,7 +88,6 @@
   .botoes {
     margin-left: auto;
   }
-  /*      */
   
   .navbar {
     background: var(--color-white);
@@ -128,14 +120,10 @@
   .carousel {
     display: inline-block;
     max-width: 30%;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 40px;
+    margin-top: 5%;
   }
 
-  /* .carousel .btn {
-    color: var(--color-white);
-    background: var(--color-primary);
-    font-weight: bold;
-    font-size: medium;
-    margin-right: 5px;
-  } */
+  li {
+    list-style-type: none;
+  }

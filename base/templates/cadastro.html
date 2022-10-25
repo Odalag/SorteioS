@@ -11,11 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>SorteioS</title>
-  </head>
-  <body>
-<!-- Bloco completo da página -->
-    <div>
-      <!--Navbar com a logo-->
+   <!--Navbar com a logo-->
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="">
           <img src="{% static 'images/Logo2.png' %}" width="120" height="120" class="d-inline-block align-top" alt="Logo SorteioS">
@@ -35,29 +31,52 @@
           </div>
         </div>
       </nav>
-
+      <!-- Fechamento da Navbar -->
+  </head>
+  <body>
+<!-- Bloco completo da página -->
+    <div>
+     <!-- Formulário de cadastro -->
       <div class="form_cadastro">
       <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
       <form action="" method="POST">
-          {% csrf_token %}
+          {% csrf_token %} 
         <form action="{% url 'cadastro' %}" method="POST">
-              <p>Usuário:</p>
-              <input type="text" placeholder="" name="username">
-              <br>
-              <br>
-              <p>Email:</p>
-              <input type="email" name="email">
-              <br>
-              <br>
-              <p>Senha:</p>
-              <input type="password" name="password">
-              <br>
-              <br>
+          <label for="nomec">Nome:</label>
+          <br>
+          <input type="text" id=nomec placeholder="Nome Completo" name="username">
+          <br>
+          <br>
+          <label for="tel">Telefone:</label>
+          <br>
+          <input type="tel" id=tel placeholder="(99)99999-9999" name="telefone">
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" id=email placeholder="email@gmail.com" name="email">
+          <br>
+          <br>
+          <label for="passwd">Senha:</label>
+          <br>
+          <input type="password" id=passwd placeholder="Senha" name="password">
+          <br>
+          <br>
+          <label for="sim">Você é aluno?</label>
+          <br>
+          <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
+          <label for="sim">Sim</label>
+          <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
+          <label for="sim">Não</label>
+          <br>
+          <br>
           <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button>
       </form>
       </div>
-
+      <!-- Fim do formulário -->
     </div>
+    <!-- Fim do bloco da página -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
