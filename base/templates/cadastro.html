@@ -39,9 +39,8 @@
      <!-- Formulário de cadastro -->
       <div class="form_cadastro">
       <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
-      <form action="" method="POST">
-          {% csrf_token %} 
         <form action="{% url 'cadastro' %}" method="POST">
+          {% csrf_token %} 
           <label for="nomec">Nome:</label>
           <br>
           <input type="text" id=nomec placeholder="Nome Completo" name="username">

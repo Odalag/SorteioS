@@ -13,7 +13,7 @@
     --color-warning-dark: #927f40;
     --color-error-dark: #da525d;
   
-    --font-primary: sans-serif;
+    --font-primary: Arial, Helvetica, sans-serif;
     --font-headings: "Roboto Slab", serif;
   
     --spacing-gutter-medium: 3rem;
@@ -40,10 +40,11 @@
 
   .form_cadastro {
     background-color: var(--color-white);
-    max-width: 400px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 250px;
+    max-width: 500px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 50px 20px 50px;
     border-radius: 20px;
     font-weight: bold;
@@ -53,7 +54,7 @@
   input {
     background-color: rgb(219, 219, 219);
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 50px 3px 10px;
+    padding: 5px 100px 3px 10px;
     border-radius: 10px;
     border-style: solid;
     border-color: transparent;
@@ -108,9 +109,9 @@
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--color-secundary);
-    margin-bottom: 20px;  
+    margin-bottom: 5%;  
   }
 
   .form_cadastro p {
