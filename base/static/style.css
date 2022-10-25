@@ -41,12 +41,11 @@
   .form_cadastro {
     background-color: var(--color-white);
     max-width: 400px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 250px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 50px 20px 50px;
-    border-radius: 20px;
-    font-weight: bold;
+    border-radius: 40px;
     font-size: large;
   }
 
@@ -116,9 +115,11 @@
   .form_cadastro h1{
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
+    font-family: inherit;
     color: var(--color-secundary);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;  }
+    margin-bottom: 20px;  
+  }
 
   .form_cadastro p {
     font-size: 15px;
