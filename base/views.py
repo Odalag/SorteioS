@@ -21,8 +21,8 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         telefone = request.POST.get('telefone')
-        matricula = request.POST.get('matricula')
-        checkbox = request.POST.get('checkbox')
+        # matricula = request.POST.get('matricula')
+        # checkbox = request.POST.get('checkbox')
 
         #user = User.objects.filter('username').first()
 
@@ -31,7 +31,8 @@ def register(request):
         #else:
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()
-        Profile.objects.create(telefone=telefone, user=user, matricula=matricula)
+        profile = Profile.objects.create(telefone=telefone, user=user)
+        profile.save()
         return render(request, "home.html")
 
 def login(request):

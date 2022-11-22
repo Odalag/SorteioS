@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% load crispy_forms_tags %}
 
 <!doctype html>
 <html lang="pt-br">
@@ -40,8 +40,8 @@
       <div class="form_cadastro">
       <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
         <form action="{% url 'cadastro' %}" method="POST">
-          {% csrf_token %} 
-          <label for="nomec">Nome:</label>
+          {% csrf_token %} {{% form|crispy %}}
+          <!-- <label for="nomec">Nome:</label>
           <br>
           <input type="text" id=nomec placeholder="Nome Completo" name="username">
           <br>
@@ -60,16 +60,21 @@
           <br>
           <input type="password" id=passwd placeholder="Senha" name="password">
           <br>
-          <br>
-          <label for="sim">Você é aluno?</label>
+          <br> -->
+          <!-- <label for="sim">Você é aluno?</label>
           <br>
           <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
           <label for="sim">Sim</label>
           <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
-          <label for="sim">Não</label>
+          <label for="sim">Não</label> -->
+          <!-- <br>
           <br>
+          <label for="matriculas">Matricula:</label>
           <br>
-          <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button>
+          <input type="text" id=matriculas placeholder="Matricula" name="matriculas">
+          <br>
+          <br> -->
+          <!-- <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button> -->
       </form>
       </div>
       <!-- Fim do formulário -->
