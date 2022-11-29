@@ -38,10 +38,10 @@
     <div>
      <!-- Formulário de cadastro -->
       <div class="form_cadastro">
-      <h1 class="display-5 fw-bold">Cadastrar Usuário</h1>
+      <h1 class="display-5 fw-bold">Cadastro</h1>
         <form action="{% url 'cadastro' %}" method="POST">
-          {% csrf_token %} {{% form|crispy %}}
-          <!-- <label for="nomec">Nome:</label>
+          {% csrf_token %}
+          <label for="nomec">Nome:</label>
           <br>
           <input type="text" id=nomec placeholder="Nome Completo" name="username">
           <br>
@@ -60,25 +60,17 @@
           <br>
           <input type="password" id=passwd placeholder="Senha" name="password">
           <br>
-          <br> -->
-          <!-- <label for="sim">Você é aluno?</label>
           <br>
-          <input type="radio" id="sim" placeholder="" name="checkbox" value="sim">
-          <label for="sim">Sim</label>
-          <input type="radio" id="nao" placeholder="" name="checkbox" value="nao">
-          <label for="sim">Não</label> -->
-          <!-- <br>
-          <br>
-          <label for="matriculas">Matricula:</label>
-          <br>
-          <input type="text" id=matriculas placeholder="Matricula" name="matriculas">
-          <br>
-          <br> -->
-          <!-- <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button> -->
+          <button id="button_form" type="submit" class="btn btn-lg">Cadastrar-se</button>
       </form>
       </div>
       <!-- Fim do formulário -->
     </div>
+    <!-- {% if request.user.is_authenticated %}
+    <h1>OK</h1>
+    {% else %}
+    <h1>ERRO</h1>
+    {% endif %} -->
     <!-- Fim do bloco da página -->
 
     <!-- Optional JavaScript -->

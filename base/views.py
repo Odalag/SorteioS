@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 from .models import Profile
 
 
@@ -21,19 +22,12 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         telefone = request.POST.get('telefone')
-        # matricula = request.POST.get('matricula')
-        # checkbox = request.POST.get('checkbox')
 
-        #user = User.objects.filter('username').first()
-
-        #if user:
-        #    return render(request, "core/pages/permisson.html")
-        #else:
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()
         profile = Profile.objects.create(telefone=telefone, user=user)
         profile.save()
-        return render(request, "home.html")
+        return render(request, "login.html")
 
 def login(request):
     if request.method == 'GET':
@@ -49,4 +43,4 @@ def login(request):
             return render(request, "home.html") 
             
         else:
-           return render(request, "login.html")
+           return render(request, "sobre.html")

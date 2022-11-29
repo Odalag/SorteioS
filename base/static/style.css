@@ -38,7 +38,7 @@
     margin: auto;
   }
 
-  .form_cadastro {
+  .form_cadastro, .form_login {
     background-color: var(--color-white);
     max-width: 500px;
     display: block;
@@ -105,12 +105,12 @@
     color: var(--color-primary);
   }
   
-  .form_cadastro h1{
+  h1{
     font-weight: bold;
     font-size: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-secundary);
+    color: var(--color-black);
     margin-bottom: 5%;  
   }
 
@@ -128,3 +128,12 @@
   li {
     list-style-type: none;
   }
+
+#card_sobre {
+  background-color: cornflowerblue;
+ }
+
+.card-body {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
