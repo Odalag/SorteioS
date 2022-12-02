@@ -4,6 +4,9 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
+from django.contrib.auth import login as login_django
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from .models import Profile
 
 
@@ -33,14 +36,15 @@ def login(request):
     if request.method == 'GET':
         return render(request, "login.html")
     else:
-        email = request.POST.get('email')
+        username = request.POST.get('username')
         password = request.POST.get('password')
         
-        user = authenticate(email=email, password=password)
+        user = authenticate(username=username, password=password)
         
-        if user is not None:
-            login_django(request, user)
-            return render(request, "home.html") 
-            
-        else:
-           return render(request, "sobre.html")
+        #if user is not None:
+        login_django(request, user)
+        #return render(request, "home.html") 
+        return HttpResponseRedirect(reverse('home')) 
+        
+        #else:
+        #   return HttpResponseRedirect(reverse('login')) 

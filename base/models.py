@@ -21,3 +21,6 @@ class Profile(models.Model):
     # categoria = models.CharField('Você é aluno?', max_length=3, choices=STATUS_CATEGORIA, null=True)
     # matricula = models.CharField('Matricula', max_length=14, blank=True)
     user = models.OneToOneField(User, on_delete= models.CASCADE, null=True)
+    
+    def __str__(self):
+        return self.user.username
