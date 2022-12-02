@@ -41,10 +41,10 @@ def login(request):
         
         user = authenticate(username=username, password=password)
         
-        #if user is not None:
-        login_django(request, user)
-        #return render(request, "home.html") 
-        return HttpResponseRedirect(reverse('home')) 
+        if user is not None:
+            login_django(request, user)
+            #return render(request, "home.html") 
+            return HttpResponseRedirect(reverse('home')) 
         
-        #else:
-        #   return HttpResponseRedirect(reverse('login')) 
+        else:
+           return HttpResponseRedirect(reverse('login')) 
