@@ -25,10 +25,11 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         telefone = request.POST.get('telefone')
+        matricula = request.POST.get('matricula')
 
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()
-        profile = Profile.objects.create(telefone=telefone, user=user)
+        profile = Profile.objects.create(matricula=matricula, telefone=telefone, user=user)
         profile.save()
         return render(request, "login.html")
 
